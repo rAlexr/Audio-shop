@@ -1,11 +1,12 @@
-import Nav from "./Components/nav";
-import Hero from "./Components/hero";
+import Wrapper from "./Components/wrapper";
+import Home from "./Pages/Home";
+
 
 function App() {
   return (
     <div className="main">
-      <Nav />
-      <Hero />
+     <Home />
+     <Wrapper />
     </div>
   );
 }

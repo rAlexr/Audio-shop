@@ -1,0 +1,10 @@
+@use "../../Assets/styles/style.scss" as *;
+
+.wrapper {
+    height: 100vh;
+    background-color: darkgray;
+    padding: 0 20px;
+    h1 {
+        margin: 0;
+    }
+}
