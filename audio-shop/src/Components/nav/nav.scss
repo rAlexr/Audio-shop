@@ -84,10 +84,10 @@
   }
 
   @media screen and (min-width: $laptop) {
-    padding: 25px 120px;
+    padding: 25px 220px;
 
     &::after {
-      width: calc(100% - 239px);
+      width: calc(100% - 440px);
     }
 
     & li {
@@ -96,10 +96,10 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding: 25px 200px;
+    padding: 25px 320px;
 
     &::after {
-      width: calc(100% - 400px);
+      width: calc(100% - 630px);
     }
   }
 }

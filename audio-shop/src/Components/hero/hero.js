@@ -9,7 +9,7 @@ const Hero = () => {
       </div>
 
       <picture>
-        <source
+        {/* <source
           media="(min-width: 1920px)"
           srcSet="photos/home/desktop/hero-big.jpg"
         />
@@ -17,11 +17,11 @@ const Hero = () => {
         <source
           media="(min-width: 1440px)"
           srcSet="photos/home/desktop/hero-med.jpg"
-        />
+        /> */}
 
         <source
           media="(min-width: 1024px)"
-          srcSet="photos/home/desktop/hero-small.jpg"
+          srcSet="photos/home/desktop/image-hero1.jpg"
         />
 
         <source
