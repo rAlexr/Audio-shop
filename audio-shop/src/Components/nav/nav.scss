@@ -1,0 +1,105 @@
+@use "../../Assets/styles/style.scss" as *;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+  background-color: $easy-black;
+  position: relative;
+  border-bottom: 1px solid $silver;
+
+  & svg:nth-child(4) {
+    fill: $white;
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    justify-content: flex-start;
+    padding: 25px 65px;
+    border: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: calc(100% - 125px);
+      height: 1px;
+      margin: auto;
+      background-color: $silver;
+    }
+
+    & svg:nth-child(1) {
+      margin: 0 60px 0 0;
+    }
+
+    & svg:nth-child(4) {
+      margin-left: auto;
+
+      &:hover {
+        fill: $primary-orange;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (min-width: $laptop-s) {
+    justify-content: space-between;
+
+    &::after {
+      width: calc(100% - 130px);
+    }
+
+    & svg:nth-child(4) {
+      margin-left: initial;
+    }
+
+    & svg:nth-child(1) {
+      display: none;
+    }
+
+    &__menu {
+      display: flex;
+      color: $white;
+
+      & li {
+        list-style: none;
+        text-transform: uppercase;
+        font-family: "Manrope-500";
+        font-size: 13px;
+        letter-spacing: 2px;
+        margin: 0 17px;
+
+        &:hover {
+          color: $primary-orange;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $laptop) {
+    padding: 25px 120px;
+
+    &::after {
+      width: calc(100% - 239px);
+    }
+
+    & li {
+      margin: 0 25px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 25px 200px;
+
+    &::after {
+      width: calc(100% - 400px);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use "../../Assets/styles/style.scss" as *;
+
+.container {
+  max-width: 330px;
+  height: 355px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+  > p:first-child {
+    @include spaced;
+    color: $fade-silver;
+    font-family: "Manrope-300";
+  }
+
+  > h2 {
+    font-family: "Manrope-600";
+    font-size: 36px;
+    color: $white;
+    margin: 20px 0;
+  }
+
+  > p:nth-child(3) {
+    @include subtitle;
+    color: $fade-silver;
+    font-family: "Manrope-500";
+    text-transform: none;
+    font-size: 14px;
+  }
+}

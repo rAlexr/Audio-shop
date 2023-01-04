@@ -1,0 +1,16 @@
+@use "./fontface.scss" as *;
+
+@mixin spaced {
+  font-family: "Manrope-200";
+  font-size: 14px;
+  text-transform: capitalize;
+  letter-spacing: 12px;
+  line-height: 9px;
+}
+
+@mixin subtitle {
+  font-family: "Manrope-800";
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
