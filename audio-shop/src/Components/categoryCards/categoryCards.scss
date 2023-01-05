@@ -1,10 +1,10 @@
 @use "../../Assets/styles/style.scss" as *;
 
 .card {
-  width: 327px;
+  width: 250px;
   height: 165px;
   border-radius: 10px;
-  margin: 20px 0;
+  margin: 50px 0;
   background-color: $silver;
   display: flex;
   flex-direction: column;

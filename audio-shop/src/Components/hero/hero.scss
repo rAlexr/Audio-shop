@@ -1,0 +1,97 @@
+@use "../../Assets/styles/style.scss" as *;
+
+.hero {
+  position: relative;
+  background-color: $easy-black;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  &__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  picture {
+    .hero--img {
+      width: 100%;
+      height: 600px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__description {
+      .container {
+        > h2 {
+          font-size: 56px;
+          padding: 0 0 40px 0;
+        }
+
+        > p:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+
+    picture {
+      img {
+        max-width: 560px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  @media screen and (min-width: $laptop-s) {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 65px;
+
+    &__description {
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+
+      .container {
+        text-align: start;
+        align-items: flex-start;
+        padding: 0;
+        margin: 0 75px 0 0;
+
+        > p:nth-child(3) {
+          display: block;
+        }
+      }
+    }
+
+    picture {
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  @media screen and (min-width: $laptop) {
+    padding: 20px 0;
+
+    &__description {
+      .container {
+        margin: 0 220px 0 0;
+
+        h2 {
+          font-size: 65px;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

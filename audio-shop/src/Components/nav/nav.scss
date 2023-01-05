@@ -50,9 +50,11 @@
 
   @media screen and (min-width: $laptop-s) {
     justify-content: space-between;
+    max-width: 910px;
+    margin: 0 auto;
 
     &::after {
-      width: calc(100% - 130px);
+      max-width: 910px;
     }
 
     & svg:nth-child(4) {
@@ -84,22 +86,14 @@
   }
 
   @media screen and (min-width: $laptop) {
-    padding: 25px 220px;
+    max-width: 1120px;
 
     &::after {
-      width: calc(100% - 440px);
+      max-width: 1120px;
     }
 
     & li {
       margin: 0 25px;
-    }
-  }
-
-  @media screen and (min-width: $desktop) {
-    padding: 25px 320px;
-
-    &::after {
-      width: calc(100% - 630px);
     }
   }
 }

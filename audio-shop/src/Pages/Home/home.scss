@@ -1,6 +1,8 @@
 @use "../../Assets/styles/style.scss" as *;
 
 .home {
+  background-color: #191919;
+
   &__cards-container {
     @media screen and (min-width: $tablet) {
       display: flex;

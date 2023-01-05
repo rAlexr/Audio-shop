@@ -9,16 +9,6 @@ const Hero = () => {
       </div>
 
       <picture>
-        {/* <source
-          media="(min-width: 1920px)"
-          srcSet="photos/home/desktop/hero-big.jpg"
-        />
-
-        <source
-          media="(min-width: 1440px)"
-          srcSet="photos/home/desktop/hero-med.jpg"
-        /> */}
-
         <source
           media="(min-width: 1024px)"
           srcSet="photos/home/desktop/image-hero1.jpg"
@@ -29,7 +19,11 @@ const Hero = () => {
           srcSet="photos/home/desktop/hero-small.jpg"
         />
 
-        <img src="photos/home/mobile/header.jpg" alt="headset" />
+        <img
+          className="hero--img"
+          src="photos/home/mobile/header.jpg"
+          alt="headset"
+        />
       </picture>
     </div>
   );
