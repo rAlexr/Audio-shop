@@ -1,4 +1,4 @@
-const CategoryCard = (props) => {
+const CategoryCards = (props) => {
   return (
     <div className="card">
       <img
@@ -28,4 +28,4 @@ const CategoryCard = (props) => {
   );
 };
 
-export default CategoryCard;
+export default CategoryCards;

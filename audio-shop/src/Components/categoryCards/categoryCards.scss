@@ -42,11 +42,29 @@
 
       &:hover {
         color: $primary-orange;
+        cursor: pointer;
       }
     }
 
     &--svg {
       margin: 18px 0 0 6px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 223px;
+    height: 165px;
+    margin: 10px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    width: 400px;
+    height: 204px;
+
+    &__thumbnail {
+      width: 181px;
+      height: 170px;
+      top: -45px;
     }
   }
 }

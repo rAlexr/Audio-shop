@@ -1,1 +1,18 @@
 @use "../../Assets/styles/style.scss" as *;
+
+.home {
+  &__cards-container {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
+
+    @media screen and (min-width: $laptop-s) {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 100px 0;
+    }
+  }
+}
