@@ -1,11 +1,11 @@
-import ProductDescription from "../productDescription/productDescription";
+import HeroDescription from "../heroDescription/heroDescription";
 import "./hero.scss";
 
 const Hero = () => {
   return (
     <div className="hero">
       <div className="hero__description">
-        <ProductDescription />
+        <HeroDescription />
       </div>
 
       <picture>

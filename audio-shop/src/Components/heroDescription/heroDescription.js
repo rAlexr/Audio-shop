@@ -1,7 +1,7 @@
 import Button from "../button";
-import "./productDescription.scss";
+import "./heroDescription.scss";
 
-const ProductDescription = () => {
+const HeroDescription = () => {
   return (
     <div className="container">
       <p>new product</p>
@@ -15,4 +15,4 @@ const ProductDescription = () => {
   );
 };
 
-export default ProductDescription;
+export default HeroDescription;
