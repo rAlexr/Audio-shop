@@ -7,7 +7,7 @@ const Home = () => {
     <div className="home">
       <Nav />
       <Hero />
-      <Wrapper />
+      <Wrapper /> 
     </div>
   );
 };

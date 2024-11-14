@@ -1,7 +1,9 @@
-const Wrapper = () => {
+
+
+const Wrapper = (props) => {
     return (
     <div className="wrapper">
-        <h1>THE WRAPPER</h1>
+        {props.name}    
     </div>
     )
 };
