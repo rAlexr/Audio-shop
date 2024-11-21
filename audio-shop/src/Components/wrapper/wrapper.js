@@ -3,7 +3,7 @@
 const Wrapper = (props) => {
     return (
     <div className="wrapper">
-        {props.name}    
+        {props.something}    
     </div>
     )
 };
